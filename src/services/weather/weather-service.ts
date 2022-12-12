@@ -6,7 +6,7 @@ import {
   TOpenWeatherMapLocationMetadata,
 } from "./types";
 
-const API_ROOT_URL = "http://api.openweathermap.org";
+const API_ROOT_URL = "https://api.openweathermap.org";
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 console.log(process.env)
