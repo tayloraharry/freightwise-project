@@ -37,7 +37,7 @@ const RecentLocations: React.FC<Props> = ({ onRecentSelected }) => {
   }
 
   return (
-    <div
+    <div //inline styling should have been lifted to styled components - ran out of time
       style={{
         display: "flex",
         justifyContent: "center",
@@ -50,7 +50,7 @@ const RecentLocations: React.FC<Props> = ({ onRecentSelected }) => {
         {recentLocations
           .reverse()
           .map(({ name: city, state, lat, lon }, index) => (
-            <RecentLocation>
+            <RecentLocation key={index}>
               <div
                 style={{
                   display: "flex",

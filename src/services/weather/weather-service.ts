@@ -7,7 +7,9 @@ import {
 } from "./types";
 
 const API_ROOT_URL = "http://api.openweathermap.org";
-const API_KEY = "25e989bd41e3e24ce13173d8126e0fd6";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
+console.log(process.env)
 
 const getCoordinatesByZipCode = async (
   zipCode: number,
